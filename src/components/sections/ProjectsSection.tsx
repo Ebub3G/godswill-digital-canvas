@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
@@ -16,6 +15,7 @@ const ProjectsSection = () => {
       category: 'Visual Identity & Web Design',
       technologies: ['Brand Identity', 'Web Design', 'Art Direction', 'Content Strategy'],
       icon: Palette,
+      link: 'https://art-gallery-lake-ten.vercel.app',
       image: 'https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=600&h=400&fit=crop&crop=center',
       alt: 'Elena Rodriguez Art Gallery website design showing modern gallery layout'
     },
@@ -25,6 +25,7 @@ const ProjectsSection = () => {
       category: 'Brand & Digital Experience',
       technologies: ['Brand Strategy', 'Digital Design', 'Social Media', 'Menu Design'],
       icon: Globe,
+      link: 'https://bella-vista-inky.vercel.app',
       image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=400&fit=crop&crop=center',
       alt: 'Bella Vista Italian Restaurant brand design and digital experience'
     },
@@ -34,6 +35,7 @@ const ProjectsSection = () => {
       category: 'Personal Brand & Coaching Platform',
       technologies: ['Personal Branding', 'Platform Design', 'Content Strategy', 'UX Design'],
       icon: User,
+      link: 'https://coach-sarah.vercel.app',
       image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=400&fit=crop&crop=center',
       alt: 'Coach Sarah personal brand and coaching platform design'
     },
