@@ -14,7 +14,7 @@ const HeroSection = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <motion.div
+        <motion.header
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -30,7 +30,7 @@ const HeroSection = () => {
             <span className="text-gray-600">ANUO</span>
           </motion.h1>
 
-          <motion.p
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
@@ -39,17 +39,20 @@ const HeroSection = () => {
             Professional Content Creator & Digital Designer
             <br />
             Crafting compelling visual stories and digital experiences
-          </motion.p>
+          </motion.h2>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
             className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
+            role="navigation"
+            aria-label="Main actions"
           >
             <Button
               onClick={() => scrollToSection('projects')}
               className="bg-[#1a1a1a] hover:bg-gray-800 text-white font-montserrat font-medium px-8 py-3 text-lg"
+              aria-label="View my design and content creation portfolio"
             >
               <Eye className="mr-2 h-5 w-5" />
               View Work
@@ -58,6 +61,7 @@ const HeroSection = () => {
               onClick={() => scrollToSection('contact')}
               variant="outline"
               className="border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white font-montserrat font-medium px-8 py-3 text-lg"
+              aria-label="Contact Godswill Anuo for collaboration"
             >
               <Mail className="mr-2 h-5 w-5" />
               Get in Touch
@@ -73,12 +77,12 @@ const HeroSection = () => {
             <button
               onClick={() => scrollToSection('about')}
               className="text-gray-400 hover:text-[#1a1a1a] transition-colors duration-300"
-              aria-label="Scroll to about section"
+              aria-label="Scroll to about section to learn more about Godswill Anuo"
             >
               <ArrowDown size={32} />
             </button>
           </motion.div>
-        </motion.div>
+        </motion.header>
       </div>
     </section>
   );
